@@ -212,10 +212,6 @@
     "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.hideOnStartup": "always",
     "update.mode": "manual",
-    "vscode_custom_css.imports": [
-        "file:///${userHome}/.config/not-so-minimal-vscode/styles.css",
-        "file:///${userHome}/.config/not-so-minimal-vscode/scripts.js"
-    ],
     "window.autoDetectColorScheme": true,
     "window.commandCenter": false,
     "window.dialogStyle": "native",
@@ -237,5 +233,9 @@
     "workbench.productIconTheme": "fluent-icons",
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.reduceMotion": "off",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "vscode_custom_css.imports": [
+        "file:///${userHome}/.config/not-so-minimal-vscode/styles.css",
+        "file:///${userHome}/.config/not-so-minimal-vscode/scripts.js"
+    ]
 }
