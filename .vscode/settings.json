@@ -42,10 +42,19 @@
     },
     "[css]": {
         "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.css-language-features"
     },
     "[html]": {
         "editor.suggest.insertMode": "replace",
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "files.associations": {
+        "${workspaceFolder}/settings/settings.json": "jsonc"
+    },
+    "json.schemas": [
+        {
+            "fileMatch": ["settings/settings.json"],
+            "url": "vscode://schemas/settings/user"
+        }
+    ]
 }
