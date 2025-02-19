@@ -1,4 +1,4 @@
-# Not So Minimalist VS Code
+# Not So Minimal - VS Code
 
 > [!NOTE]
 > Read the [Custom CSS and JS Loader documentation](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) for tips on avoiding issues with changes not taking effect.
@@ -20,8 +20,8 @@ Press `Ctrl + P` (Windows/Linux) or `Cmd + P` (Mac), enter, and execute the foll
 
 1. Copy the contents of `settings/settings.json` into your VS Code configuration file. Remove duplicate options if necessary.
 2. Copy `settings/styles.css` and `settings/script.js` to a directory of your choice. Recommended locations:
-   - **Linux/Mac:** `~/.config/not-so-minimalist-vscode/`
-   - **Windows:** `C:\Users\your-user\.config\not-so-minimalist-vscode\`
+   - **Linux/Mac:** `~/.config/not-so-minimal-vscode/`
+   - **Windows:** `C:\Users\your-user\.config\not-so-minimal-vscode\`
 
 ### 3. Update `settings.json`
 
@@ -34,8 +34,8 @@ Edit the `vscode_custom_css.imports` property in your VS Code settings:
   // ... Rest of this repository settings/settings.json file
 
   "vscode_custom_css.imports": [
-      "file:///${userHome}/.config/not-so-minimalist-vscode/styles.css",
-      "file:///${userHome}/.config/not-so-minimalist-vscode/script.js",
+      "file:///${userHome}/.config/not-so-minimal-vscode/styles.css",
+      "file:///${userHome}/.config/not-so-minimal-vscode/script.js",
       
       // Alternative locations
       "file:///Users/your-user-name/custom-vscode.css",

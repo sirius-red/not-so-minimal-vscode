@@ -213,8 +213,8 @@
     "terminal.integrated.hideOnStartup": "always",
     "update.mode": "manual",
     "vscode_custom_css.imports": [
-        "file:///${userHome}/.config/not-so-minimalist-vscode/styles.css",
-        "file:///${userHome}/.config/not-so-minimalist-vscode/scripts.js"
+        "file:///${userHome}/.config/not-so-minimal-vscode/styles.css",
+        "file:///${userHome}/.config/not-so-minimal-vscode/scripts.js"
     ],
     "window.autoDetectColorScheme": true,
     "window.commandCenter": false,
