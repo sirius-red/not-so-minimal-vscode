@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const checkElement = setInterval(() => {
+    const checkCommandDialog = setInterval(() => {
         const commandDialog = document.querySelector(".quick-input-widget");
         if (commandDialog) {
             // Apply the blur effect immediately if the command dialog is visible
@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener(
         "keydown",
         function (event) {
-        if (event.key === "Escape" || event.key === "Esc") {
+            if (event.key === "Escape" || event.key === "Esc") {
                 removeBlur();
-        }
+            }
         },
         true
     );
