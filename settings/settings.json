@@ -236,6 +236,6 @@
     "workbench.startupEditor": "none",
     "vscode_custom_css.imports": [
         "file:///${userHome}/.config/not-so-minimal-vscode/styles.css",
-        "file:///${userHome}/.config/not-so-minimal-vscode/scripts.js"
+        "file:///${userHome}/.config/not-so-minimal-vscode/script.js"
     ]
 }
