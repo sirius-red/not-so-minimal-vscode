@@ -108,7 +108,6 @@
     border-radius: var(--siriusred-border-radius) !important;
     background: hsl(316deg, 72%, 86%) !important;
     left: auto !important;
-    transition: all 0.15s ease-in-out;
 }
 
 .slider:hover {
