@@ -1,6 +1,6 @@
 {
     "[typescript]": {
-        "editor.defaultFormatter": "denoland.vscode-deno",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
             "source.addMissingImports.ts": "explicit",
             "source.fixAll.ts": "always",
@@ -10,7 +10,7 @@
         }
     },
     "[javascript]": {
-        "editor.defaultFormatter": "denoland.vscode-deno",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
             "source.addMissingImports.ts": "explicit",
             "source.fixAll.ts": "always",
@@ -24,28 +24,28 @@
             "strings": true
         },
         "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[jsonc]": {
         "editor.quickSuggestions": {
             "strings": true
         },
         "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[jsonl]": {
         "editor.quickSuggestions": {
             "strings": true
         },
         "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[css]": {
         "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[html]": {
         "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
