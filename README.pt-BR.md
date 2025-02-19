@@ -3,6 +3,9 @@
 > [!NOTE]
 > Leia a [documentação do Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) para dicas sobre como evitar problemas com as alterações não surtindo efeito.
 
+> [!TIP]
+> Veja as imagens em [showcase](/showcase)
+
 ## Instalação e Configuração
 
 ### 1. Instalar Extensões Necessárias do VS Code
