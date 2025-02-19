@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Execute when command palette was launched.
     document.addEventListener("keydown", function (event) {
-        if ((event.metaKey || event.ctrlKey) && event.key === "p") {
+        if (((event.metaKey || event.ctrlKey) && event.key === "p") || event.key === "f1") {
             event.preventDefault();
             runMyScript();
         } else if (event.key === "Escape" || event.key === "Esc") {
@@ -61,10 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const newElement = document.createElement("div");
         newElement.setAttribute("id", "command-blur");
 
-        newElement.addEventListener("click", function () {
-            newElement.remove();
-        });
-
         // Append the new element as a child of the targetDiv
         targetDiv.appendChild(newElement);
     }
@@ -73,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleEscape() {
         const element = document.getElementById("command-blur");
         if (element) {
-            element.click();
+            element.remove();
         }
     }
 });
