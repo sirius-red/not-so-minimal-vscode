@@ -71,7 +71,7 @@ sudo chown -R $(whoami) /usr/share/code
 ```
 
 > [!TIP]
-> Substitua `/usr/share/code` pelo caminho correto para seu sistema:
+> Para o segundo comando, substitua `/usr/share/code` pelo caminho correto para seu sistema:
 > - **MacOS:** `/Applications/Visual Studio Code.app/Contents/MacOS/Electron`
 > - **MacOS (Insiders):** `/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron`
 > - **A maioria das distribuições Linux:** `/usr/share/code`
