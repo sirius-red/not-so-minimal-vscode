@@ -1,5 +1,7 @@
 # Not So Minimal - VS Code
 
+This readme is also in [English](/README.md)
+
 > [!NOTE]
 > Leia a [documentação do Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) para dicas sobre como evitar problemas com as alterações não surtindo efeito.
 
