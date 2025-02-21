@@ -1,4 +1,5 @@
 {
+    /* Not So Minimal - VS Code Settings */
     "breadcrumbs.enabled": false,
     "catppuccin-noctis-icons.files.associations": {
         ".graphqlrc": "graphql",
@@ -49,6 +50,8 @@
     },
     "editor.quickSuggestionsDelay": 700,
     "editor.renderLineHighlight": "gutter",
+    "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.vertical": "auto",
     "editor.semanticHighlighting.enabled": true,
     "editor.semanticTokenColorCustomizations": {
         "enabled": true
@@ -80,7 +83,14 @@
                 }
             ]
         },
-        "textMateRules": []
+        "textMateRules": [
+            {
+                "scope": "keyword.other.dotenv",
+                "settings": {
+                    "foreground": "#FF000000"
+                }
+            }
+        ]
     },
     "explorer.compactFolders": true,
     "explorer.confirmDelete": false,
@@ -220,6 +230,12 @@
     "window.newWindowProfile": "Default",
     "workbench.activityBar.location": "top",
     "workbench.commandPalette.experimental.suggestCommands": true,
+    "workbench.editor.customLabels.enabled": true,
+    "workbench.editor.customLabels.patterns": {
+        "**/.*": "${filename} (${dirname})",
+        "**/*": "${filename} (${dirname})",
+        "**/*.*": "${filename}.${extname} (${dirname})"
+    },
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.showTabs": "multiple",
     "workbench.hover.delay": 700,
