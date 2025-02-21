@@ -49,7 +49,12 @@
 
 /* File explorer action buttons */
 .monaco-workbench .part.sidebar .title-actions .actions-container {
-    display: none;
+    opacity: 0 !important;
+    transition: opacity 0.15s ease-in;
+}
+
+.monaco-workbench .part.sidebar .title-actions .actions-container:hover {
+    opacity: 1 !important;
 }
 
 /* File Explorer Item Label */
