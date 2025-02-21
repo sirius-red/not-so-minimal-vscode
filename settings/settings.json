@@ -1,5 +1,5 @@
 {
-    /* Not So Minimal - VS Code Settings */
+    /* Begin Not So Minimal - VS Code Settings */
     "breadcrumbs.enabled": false,
     "catppuccin-noctis-icons.files.associations": {
         ".graphqlrc": "graphql",
@@ -254,4 +254,5 @@
         "file:///${userHome}/.config/not-so-minimal-vscode/styles.css",
         "file:///${userHome}/.config/not-so-minimal-vscode/script.js"
     ]
+    /* End Not So Minimal - VS Code Settings */
 }
