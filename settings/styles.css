@@ -43,6 +43,7 @@
 }
 
 /* List item label name */
+/* Dark mode */
 .monaco-list.list_id_1 .monaco-list-row.selected .label-name {
     color: hsl(0deg, 0%, 100%, 0.7) !important;
 }
