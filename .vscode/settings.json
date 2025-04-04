@@ -1,60 +1,61 @@
 {
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-            "source.addMissingImports.ts": "explicit",
-            "source.fixAll.ts": "always",
-            "source.organizeImports": "always",
-            "source.organizeLinkDefinitions": "always",
-            "source.sortImports": "always"
-        }
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-            "source.addMissingImports.ts": "explicit",
-            "source.fixAll.ts": "always",
-            "source.organizeImports": "always",
-            "source.organizeLinkDefinitions": "always",
-            "source.sortImports": "always"
-        }
-    },
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonl]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "files.associations": {
-        "${workspaceFolder}/settings/settings.json": "jsonc"
-    },
-    "json.schemas": [
-        {
-            "fileMatch": ["settings/settings.json"],
-            "url": "vscode://schemas/settings/user"
-        }
-    ]
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			"source.addMissingImports.ts": "explicit",
+			"source.fixAll.ts": "always",
+			"source.organizeImports": "always",
+			"source.organizeLinkDefinitions": "always",
+			"source.sortImports": "always"
+		}
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			"source.addMissingImports.ts": "explicit",
+			"source.fixAll.ts": "always",
+			"source.organizeImports": "always",
+			"source.organizeLinkDefinitions": "always",
+			"source.sortImports": "always"
+		}
+	},
+	"[json]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonl]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"files.associations": {
+		"${workspaceFolder}/settings/settings.json": "jsonc"
+	},
+	"json.schemas": [
+		{
+			"fileMatch": ["settings/settings.json"],
+			"url": "vscode://schemas/settings/user"
+		}
+	],
+	"markdown.extension.toc.levels": "2..2"
 }
