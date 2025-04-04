@@ -1,100 +1,144 @@
 # Not So Minimal - VS Code
 
-Este readme também está em [Português (BR)](/README.pt-BR.md)
+A not so minimal VS Code UI modification with automatic support for light and dark modes.
+
+<br />
 
 > [!NOTE]
 > Read the [Custom CSS and JS Loader documentation](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) for tips on avoiding issues with changes not taking effect.
 
-> [!TIP]
-> See the [showcase](/showcase) images
+<br />
 
-## Installation and Setup
+- [Preview](#preview)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Extra Steps](#extra-steps)
 
-### 1. Install Required VS Code Extensions
+## Preview
+
+|                                                      Dark                                                       |                                                       Light                                                       |
+| :-------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+|                           <img src="assets/preview/welcome.dark.png" alt="Welcome" />                           |                           <img src="assets/preview/welcome.light.png"  alt="Welcome" />                           |
+| <img src="assets/preview/sidebar+terminal+selected-items.dark.png" alt="Sidebar + Terminal + Selected Items" /> | <img src="assets/preview/sidebar+terminal+selected-items.light.png"  alt="Sidebar + Terminal + Selected Items" /> |
+|                            <img src="assets/preview/editor.dark.png" alt="Editor" />                            |                            <img src="assets/preview/editor.light.png"  alt="Editor" />                            |
+|                   <img src="assets/preview/command-palette.dark.png" alt="Command Palette" />                   |                   <img src="assets/preview/command-palette.light.png"  alt="Command Palette" />                   |
+
+## Requirements
+
+### Font
+
+If you decide to use one of the fonts listed below, no changes are necessary. Otherwise, follow [***these steps***](#using-another-font).
+
+- [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- [Fira Code Nerd Font](https://www.nerdfonts.com/font-downloads)
+- [Fira Code](https://github.com/tonsky/FiraCode)
+
+### Extensions
 
 Press `Ctrl + P` (Windows/Linux) or `Cmd + P` (Mac), enter, and execute the following commands:
 
-| Name                     | Command                                              |
-|--------------------------|------------------------------------------------------|
-| Custom CSS and JS Loader | `ext install be5invis.vscode-custom-css`             |
-| Fluent Icons             | `ext install miguelsolorio.fluent-icons`             |
-| Catppuccin for VS Code   | `ext install Catppuccin.catppuccin-vsc`              |
-| Catppuccin Noctis Icons  | `ext install alexdauenhauer.catppuccin-noctis-icons` |
+> [!NOTE]
+> For extensions that are not required, feel free if you want to install alternatives
 
-### 2. Configure VS Code Settings
+| Name                     | Command                                            |                                                                    |
+| ------------------------ | -------------------------------------------------- | ------------------------------------------------------------------ |
+| Custom CSS and JS Loader | `ext install be5invis.vscode-custom-css`           | <img src="assets/icons/required.svg" alt="Icon: Required" />       |
+| Catppuccin for VS Code   | `ext install Catppuccin.catppuccin-vsc`            | <img src="assets/icons/recommended.svg" alt="Icon: Recommended" /> |
+| Fluent Icons             | `ext install miguelsolorio.fluent-icons`           | <img src="assets/icons/optional.svg" alt="Icon: Optional" />       |
+| Gruvbox Material Icons   | `ext install navernoedenis.gruvbox-material-icons` | <img src="assets/icons/optional.svg" alt="Icon: Optional" />       |
 
-1. Copy the contents of `settings/settings.json` into your VS Code configuration file. Remove duplicate options if necessary.
-2. Copy `settings/styles.css` and `settings/script.js` to a directory of your choice. Recommended locations:
-   - **Linux/Mac:** `~/.config/not-so-minimal-vscode/`
-   - **Windows:** `C:\Users\your-user\.config\not-so-minimal-vscode\`
+| Icon                                                               | Tag                                              | Description                                                         |
+| ------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------------- |
+| <img src="assets/icons/required.svg" alt="Icon: Required" />       | <span style="color: #f85149;">Required</span>    | The mod will not work without it.                                   |
+| <img src="assets/icons/recommended.svg" alt="Icon: Recommended" /> | <span style="color: #3fb950;">Recommended</span> | Improves visual consistency, but is not mandatory.                  |
+| <img src="assets/icons/optional.svg" alt="Icon: Optional" />       | <span style="color: #f8ec44;">Optional</span>    | Does not prevent the mod from working, but improves the experience. |
 
-### 3. Update `settings.json`
+## Installation
 
-Edit the `vscode_custom_css.imports` property in your VS Code settings:
+### 1. Clone the Repository
 
-```jsonc
-{
-  // ... Rest of your settings.json file
+#### Linux and Mac
 
-  // ... Rest of this repository settings/settings.json file
-
-  "vscode_custom_css.imports": [
-      "file:///${userHome}/.config/not-so-minimal-vscode/styles.css",
-      "file:///${userHome}/.config/not-so-minimal-vscode/script.js",
-      
-      // Alternative locations
-      "file:///Users/your-user-name/custom-vscode.css",
-      "file:///Users/your-user-name/custom-vscode-script.js",
-      "file:///C:/path-of-custom-css/custom-vscode.css",
-      "file:///C:/path-of-custom-css/custom-vscode-script.js"
-  ]
-}
+```shell
+git clone https://github.com/sirius-red/not-so-minimal-vscode.git /tmp/not-so-minimal-vscode
+cp -rf "/tmp/not-so-minimal-vscode/settings" ~/.config/not-so-minimal-vscode
+rm -rf "/tmp/not-so-minimal-vscode"
 ```
 
-### 4. Linux and Mac Permissions
+#### Windows
 
-If Visual Studio Code cannot modify itself, follow these steps:
+```powershell
+git clone https://github.com/sirius-red/not-so-minimal-vscode.git "$env:TEMP\not-so-minimal-vscode"
+Copy-Item -Path "$env:TEMP\not-so-minimal-vscode\settings" -Destination "$env:USERPROFILE\.config\not-so-minimal-vscode" -Recurse -Force
+Remove-Item -Path "$env:TEMP\not-so-minimal-vscode" -Recurse -Force
+```
 
-#### Common Issues:
+### 2. Apply the VS Code Settings
+
+Copy the contents of `~/.config/not-so-minimal-vscode/settings.json` into your VS Code configuration file. Remove duplicate options if necessary.
+
+### 3. Enable Custom CSS and JS Loader
+
+Open the **Command Palette** (`Ctrl + Shift + P`), enter, and execute:
+
+```txt
+Enable Custom CSS and JS Loader
+```
+
+If Visual Studio Code cannot modify itself, follow [these steps](#linux-and-mac-permissions).
+
+## Extra Steps
+
+### Using another font
+
+1. Install the source of your choice. (Installation may vary according to your operating system).
+2. Change the source name in the `editor.fontFamily` properties, `editor.inlayHints.fontFamily` and `editor.inlineSuggest.fontFamily` in VS code configurations.
+3. Change the source name in the variable `--nsmvsc-font-mono` in the file `~/.config/not-minimal-vscode/style.css`.
+4. Reload the extension after making changes (Or [enable](#3-enable-custom-css-and-js-loader) if it is not yet enabled):
+   1. Open the **Command Palette** (`Ctrl + Shift + P`).
+   2. Enter and execute:
+
+      ```txt
+      Reload Custom CSS and JS
+      ```
+
+### Linux and Mac Permissions
+
+#### Common Issues
 
 - Read-only VS Code files.
 - Running VS Code without necessary permissions.
 
-#### Fix:
+#### Fix
 
-Run one of the following commands to claim ownership of the installation directory:
+1. Close VS Code and run one of the following commands to claim ownership of the installation directory:
 
-```sh
-sudo chown -R $(whoami) "$(which code)"
-```
-
-```sh
-sudo chown -R $(whoami) /usr/share/code
-```
-
-> [!TIP]
-> For the second command, replace `/usr/share/code` with the correct path for your system:
-> - **MacOS:** `/Applications/Visual Studio Code.app/Contents/MacOS/Electron`
-> - **MacOS (Insiders):** `/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron`
-> - **Most Linux distros:** `/usr/share/code`
-> - **Arch Linux:** `/usr/lib/code/` or `/opt/visual-studio-code`
-
-### 5. Enable Custom CSS and JS Loader
-
-Open the **Command Palette** (`Ctrl + Shift + P`), enter, and execute:
-
-```
-Enable Custom CSS and JS Loader
-```
-
-### 6. Customize and Reload
-
-- Modify `styles.css` or `script.js` to fit your preferences.
-- Reload the extension after making changes:
-  - Open the **Command Palette** (`Ctrl + Shift + P`).
-  - Enter and execute:
-  
-    ```
-    Reload Custom CSS and JS
+    ```sh
+    sudo chown -R $(whoami) "$(which code)"
     ```
 
+    ```sh
+    sudo chown -R $(whoami) /opt/visual-studio-code
+    ```
+
+    > [!TIP]
+    > For the second command, replace `/opt/visual-studio-code` with the correct path for your system:
+    >
+    > - **Arch Linux:** `/usr/lib/code/` or `/opt/visual-studio-code`
+    > - **Most Linux distros:** `/usr/share/code`
+    > - **MacOS:** `/Applications/Visual Studio Code.app/Contents/MacOS/Electron`
+    > - **MacOS (Insiders):** `/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron`
+
+2. Open VS Code and [Enable Custom CSS and JS Loader](#3-enable-custom-css-and-js-loader).
+
+### Customizing
+
+1. Modify `~/.config/not-so-minimal-vscode/styles.css` or `~/.config/not-so-minimal-vscode/script.js` to fit your preferences.
+2. Reload the extension after making changes (Or [enable](#3-enable-custom-css-and-js-loader) if it is not yet enabled):
+   1. Open the **Command Palette** (`Ctrl + Shift + P`).
+   2. Enter and execute:
+
+      ```txt
+      Reload Custom CSS and JS
+      ```
