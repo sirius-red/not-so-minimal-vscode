@@ -1,24 +1,31 @@
 {
-    "arrowParens": "avoid",
-    "bracketSameLine": false,
-    "bracketSpacing": true,
-    "embeddedLanguageFormatting": "auto",
-    "endOfLine": "lf",
-    "objectWrap": "preserve",
-    "printWidth": 100,
-    "proseWrap": "preserve",
-    "quoteProps": "as-needed",
-    "semi": true,
-    "singleQuote": false,
-    "tabWidth": 4,
-    "trailingComma": "none",
-    "useTabs": false,
-    "overrides": [
-        {
-            "files": ["*.md"],
-            "options": {
-                "tabWidth": 2
-            }
-        }
-    ]
+	"arrowParens": "avoid",
+	"bracketSameLine": false,
+	"bracketSpacing": true,
+	"embeddedLanguageFormatting": "auto",
+	"endOfLine": "lf",
+	"objectWrap": "preserve",
+	"printWidth": 100,
+	"proseWrap": "preserve",
+	"quoteProps": "as-needed",
+	"semi": true,
+	"singleQuote": false,
+	"tabWidth": 4,
+	"trailingComma": "none",
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": ["*.css", "*.scss", "*.less"],
+			"options": {
+				"printWidth": 120
+			}
+		},
+		{
+			"files": ["*.md"],
+			"options": {
+				"tabWidth": 2,
+				"useTabs": false
+			}
+		}
+	]
 }
