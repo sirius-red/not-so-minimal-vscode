@@ -69,9 +69,9 @@ rm -rf "/tmp/not-so-minimal-vscode"
 #### Windows
 
 ```powershell
-git clone https://github.com/sirius-red/not-so-minimal-vscode.git "$env:TEMP\not-so-minimal-vscode"
-Copy-Item -Path "$env:TEMP\not-so-minimal-vscode\settings" -Destination "$env:USERPROFILE\.config\not-so-minimal-vscode" -Recurse -Force
-Remove-Item -Path "$env:TEMP\not-so-minimal-vscode" -Recurse -Force
+git clone https://github.com/sirius-red/not-so-minimal-vscode.git $env:TEMP\not-so-minimal-vscode
+Copy-Item -Path $env:TEMP\not-so-minimal-vscode\settings -Destination $env:USERPROFILE\.config\not-so-minimal-vscode -Recurse -Force
+Remove-Item -Path $env:TEMP\not-so-minimal-vscode -Recurse -Force
 ```
 
 ### 2. Apply the VS Code Settings
