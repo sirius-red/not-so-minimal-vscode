@@ -56,6 +56,8 @@ Press `Ctrl + P` (Windows/Linux) or `Cmd + P` (Mac), enter, and execute the foll
 
 ## Installation
 
+If you are using it has synthwave '84, see [these instructions](/settings/synthwave84/).
+
 ### 1. Clone the Repository
 
 #### 1.1 Linux and Mac
