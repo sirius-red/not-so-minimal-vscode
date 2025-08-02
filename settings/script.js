@@ -22,12 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		clearInterval(checkCommandDialog);
 	}, 500);
 
+	const isOpenKey = key => ["p", "f1"].includes(key);
+	const isCloseKey = key => ["Escape", "Esc"].includes(key);
+
 	// Execute when command palette was launched.
 	document.addEventListener("keydown", function (event) {
-		if (((event.metaKey || event.ctrlKey) && event.key === "p") || event.key === "f1") {
+		if ((event.metaKey || event.ctrlKey) && isOpenKey(event.key)) {
 			event.preventDefault();
 			addBlur();
-		} else if (event.key === "Escape" || event.key === "Esc") {
+		} else if (isCloseKey(event.key)) {
 			event.preventDefault();
 			removeBlur();
 		}
@@ -37,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.addEventListener(
 		"keydown",
 		function (event) {
-			if (event.key === "Escape" || event.key === "Esc") removeBlur();
+			if (isCloseKey(event.key)) removeBlur();
 		},
 		true
 	);

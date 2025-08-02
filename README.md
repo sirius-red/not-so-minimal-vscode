@@ -62,8 +62,8 @@ Press `Ctrl + P` (Windows/Linux) or `Cmd + P` (Mac), enter, and execute the foll
 
 ```shell
 git clone https://github.com/sirius-red/not-so-minimal-vscode.git /tmp/not-so-minimal-vscode
-cp -rf "/tmp/not-so-minimal-vscode/settings" ~/.config/not-so-minimal-vscode
-rm -rf "/tmp/not-so-minimal-vscode"
+cp -rf /tmp/not-so-minimal-vscode/settings ~/.config/not-so-minimal-vscode
+rm -rf /tmp/not-so-minimal-vscode
 ```
 
 #### Windows
