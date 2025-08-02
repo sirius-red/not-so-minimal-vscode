@@ -2,8 +2,6 @@
 
 These files should be used with the [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) VS Code theme.
 
-Por enquanto a instalação automática suporte apenas o windows
-
 ## Installation
 
 > [!NOTE]
