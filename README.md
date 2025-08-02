@@ -58,7 +58,7 @@ Press `Ctrl + P` (Windows/Linux) or `Cmd + P` (Mac), enter, and execute the foll
 
 ### 1. Clone the Repository
 
-#### Linux and Mac
+#### 1.1 Linux and Mac
 
 ```shell
 git clone https://github.com/sirius-red/not-so-minimal-vscode.git /tmp/not-so-minimal-vscode
@@ -66,7 +66,7 @@ cp -rf /tmp/not-so-minimal-vscode/settings ~/.config/not-so-minimal-vscode
 rm -rf /tmp/not-so-minimal-vscode
 ```
 
-#### Windows
+#### 1.2 Windows
 
 ```powershell
 git clone https://github.com/sirius-red/not-so-minimal-vscode.git $env:TEMP\not-so-minimal-vscode
